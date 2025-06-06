@@ -1,0 +1,39 @@
+body {
+    background-image: url("/BattleShipNew/resource/battleship.jpeg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+.winning {
+    font-size: 64px;                
+    text-align: center;          
+    color: blue; 
+    margin-top: 200px;
+    font-family: 'DynaPuff', cursive; 
+} 
+
+.losing {
+    font-size: 64px;                
+    text-align: center;          
+    color: red; 
+    margin-top: 200px;
+    font-family: 'DynaPuff', cursive; 
+} 
+
+.PlayAgainButton {
+    font-size: 3vh;                /*Kích thước font cho các button là 24px */
+    padding: 16px 32px;             /*Khoảng cách lề nội dung trong button là 16px trên dưới và 32px trái phải */
+    border-radius: 16px;            /*Bo tròn hình chữ nhật*/
+    margin: 100px 500px;       /*Canh giữa 20px*/
+} 
+
+.ExitButton{ 
+    font-size: 3vh;    
+    padding: 16px 32px;
+    border-radius: 16px;
+    margin: -165px 830px;     
+}
+
+.PlayAgainButton, .ExitButton{
+    display: flex;
+}

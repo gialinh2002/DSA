@@ -1,0 +1,153 @@
+.battleship {
+    font-size: 64px;                /*Set size là 48 pixel cho battleShip*/
+    text-align: center;          
+    color: red;
+    font-family: 'DynaPuff', cursive;
+}
+
+.game{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-top: 10vh;
+    border: 1vh;
+    margin-left: 20vh;
+    margin-right: 20vh;
+}
+
+.LeftContent{
+    height: 450px;
+    width: 350px;
+    margin-left: 20vh;
+}
+
+.RightContent{
+    height: 450px;
+    width: 440px;
+    margin-right: 20vh;
+}
+
+.MidContent{
+    margin-top: 10vh;
+}
+
+.Action{
+    margin-bottom: 30px;
+    height: 40px;
+    font-size: 6vh;
+    color: rgb(255, 0, 212);
+    font-family: 'DynaPuff';
+}
+
+.Text{
+    margin: auto;
+    height: 35px;
+    font-size: 4vh;
+    color: red;
+    font-family: 'DynaPuff';
+    margin-bottom: 20px;
+}
+
+body {
+    background-image: url("/BattleShipNew/resource/battleship.jpeg");
+    background-size: cover; /* tự động co giãn ảnh để vừa kích thước nền */
+    background-repeat: no-repeat; /* không lặp lại ảnh */
+}
+
+.StartButton {
+    font-size: 3vh;                /*Kích thước font cho các button là 24px */
+    padding: 16px 32px;             /*Khoảng cách lề nội dung trong button là 16px trên dưới và 32px trái phải */
+    border-radius: 16px;            /*Bo tròn hình chữ nhật*/
+    margin: 0 20px;                 /*Canh giữa 20px*/
+}
+
+.board{
+    border: 1px solid #000;
+    margin-right: 20px;
+    display: table-cell;
+    vertical-align: top; /* Căn lề trên của các ô */
+    background-color: gray;
+}
+
+.board_cell{
+    width: 35px;
+    height: 30px;
+    border: 1px solid black;
+    display: table-cell;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Căn giữa nội dung trong ô */
+    background-color: white ;
+}
+
+.Button{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    text-align: center;
+    gap: 1vh;
+    font-size: 4vh;
+    width: 20vh;
+    align-items: center;
+    flex: 1;
+}
+
+.PlacingButton{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    font-size: 75%;
+    margin-left: 3vh;
+    align-items: center;
+}
+
+.PlacingText{
+    height: 40px;
+    font-size: 3vh;
+    color: rgb(49, 3, 72);
+    font-family: 'DynaPuff';
+    text-align: center;
+}
+
+.Ship{
+    margin-top: 10vh;
+}
+
+.selectedCell{
+    background-color: gray;
+}
+
+.PlayerShip, .ComputerShip{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-bottom: 15px;
+    margin-right: 15vh;
+}
+
+.ship_data{
+    border: 1px solid #000;
+    margin-right: 20px;
+    vertical-align: top; /* Căn lề trên của các ô */
+    background-color: lightgray;
+}
+
+.Ship_Cell{
+    width: 35px;
+    height: 20px;
+    border: 1px solid black;
+    display: table-cell;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Căn giữa nội dung trong ô */
+    background-color: green;
+}
+
+.Empty{
+    background-color: red;
+}
+
+.ShipHitted{
+    background-color: green;
+}
